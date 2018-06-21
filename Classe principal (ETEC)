@@ -1,7 +1,9 @@
+//importação de bibliotecas para utilizar recursos e ferramentas que são necessárias para a execução do software
 import java.io.*;
 import javax.swing.*;
-public class ETEC {
 //classe
+public class ETEC {
+
 
 	public static void main(String[] args) throws Exception {
 		//variavel que recebe o valor do sistema para quebra linha de texto
