@@ -8,7 +8,7 @@ public class ETEC {
 	public static void main(String[] args) throws Exception {
 		//variavel que recebe o valor do sistema para quebra linha de texto
     String ls = System.getProperty("line.separator");
-    //função que cria um arquivo TXT
+    //função que cria um arquivo TXT e uma variavel fica para representa-lo
 		File al = new File ("C:/Trabalhos/Aluno.txt");
 		File pf = new File ("C:/Trabalhos/Professor.txt");
 		File cs = new File ("C:/Trabalhos/Curso.txt");
@@ -39,7 +39,9 @@ public class ETEC {
           //função que recebe o valor da variavel (num) e verifica se o valor contido é o valor necessario para iniciar o case com as funções mencionadas acima
 			switch(num){
 			case 1:
+			//função case que chama um metodo do objeto (GA) se o valor do (num) for 1 
 				GA.CadastrarAluno();
+				//função que escreve o conteudo que está nas variaveis para o arquivo (al)
 				FileWriter fw = new FileWriter (al, false);
 				fw.write(GA.al.nome);
 				fw.write(ls);
@@ -64,7 +66,9 @@ public class ETEC {
 				fw.close();
 				break;
 			case 2:
+			//função case que chama um metodo do objeto (GC) se o valor do (num) for 2 
 				GC.CadastrarCurso();
+				//função que escreve o conteudo que está nas variaveis para o arquivo (cs)
 				FileWriter cw = new FileWriter (cs, false);
 				cw.write(String.valueOf(GC.cs.alunos));
 				cw.write(ls);
@@ -89,7 +93,9 @@ public class ETEC {
 				cw.close();
 				break;
 			case 3:
+			//função case que chama um metodo do objeto (GP) se o valor do (num) for 3 
 				GP.CadastrarProfessor();
+				//função que escreve o conteudo que está nas variaveis para o arquivo (pf)
 				FileWriter pw = new FileWriter (pf, false);
 				pw.write(GP.pf.email);
 				pw.write(ls);
@@ -114,7 +120,9 @@ public class ETEC {
 				pw.close();
 				break;
 			case 4:
+			//função case que chama um metodo do objeto (GT) se o valor do (num) for 4 
 				GT.CadastrarTurma();
+				//função que escreve o conteudo que está nas variaveis para o arquivo (tm)
 				FileWriter tw = new FileWriter (tm, false);
 				tw.write(String.valueOf(GT.tm.alunos));
 				tw.write(ls);
@@ -139,6 +147,7 @@ public class ETEC {
 				tw.close();
 				break;
 			case 5:
+			//função que lê o conteudo que está no arquivo (al) para as variaveis
 				BufferedReader pr = new BufferedReader (new FileReader(al));
 				GA.al.nome = pr.readLine();
 				GA.al.sobrenome = pr.readLine();
@@ -151,9 +160,11 @@ public class ETEC {
 				GA.al.nacao = pr.readLine();
 				GA.al.tel = Integer.parseInt(pr.readLine());
 				pr.close();
+				//função case que chama um metodo do objeto (GA) se o valor do (num) for 5
 				GA.MostrarAluno();
 				break;
 			case 6:
+			//função que lê o conteudo que está no arquivo (cs) para as variaveis
 				BufferedReader cr = new BufferedReader (new FileReader(cs));
 				GC.cs.alunos = Integer.parseInt(cr.readLine());
 				GC.cs.coordenacao = cr.readLine();
@@ -166,9 +177,11 @@ public class ETEC {
 				GC.cs.duracao = Float.parseFloat(cr.readLine());
 				GC.cs.preco = Float.parseFloat(cr.readLine());
 				cr.close();
+				//função case que chama um metodo do objeto (GC) se o valor do (num) for 6
 				GC.MostrarCurso();
 				break;
 			case 7:
+			//função que lê o conteudo que está no arquivo (pf) para as variaveis
 				BufferedReader br = new BufferedReader (new FileReader(pf));
 				GP.pf.email = br.readLine();
 				GP.pf.endereco = br.readLine();
@@ -181,9 +194,11 @@ public class ETEC {
 				GP.pf.peso = Float.parseFloat(br.readLine());
 				GP.pf.tamanho = Float.parseFloat(br.readLine());
 				br.close();
+				//função case que chama um metodo do objeto (GP) se o valor do (num) for 7
 				GP.MostrarProfessor();
 				break;
 			case 8:
+			//função que lê o conteudo que está no arquivo (tm) para as variaveis
 				BufferedReader tr = new BufferedReader (new FileReader(tm));
 				GT.tm.alunos = Integer.parseInt(tr.readLine());
 				GT.tm.email = tr.readLine();
@@ -196,6 +211,7 @@ public class ETEC {
 				GT.tm.aulas = Float.parseFloat(tr.readLine());
 				GT.tm.nota = Float.parseFloat(tr.readLine());
 				tr.close();
+				//função case que chama um metodo do objeto (GT) se o valor do (num) for 8
 				GT.MostrarTurma();
 				break;
 			}
