@@ -1,0 +1,101 @@
+//Biblioteca para o funcionamento adequado das funções utilizadas na classe
+import javax.swing.JOptionPane;
+//classe
+
+public class Professor {
+//propriedades da classe
+	String nome, endereco,telefone,sexo,email,sobrenome, materia;
+	int idade;
+	float tamanho, peso;
+	
+	//metodos da classe
+	public void CadastrarNome(){
+		nome = JOptionPane.showInputDialog(
+				"Digite o nome do professor: "
+				);
+	}
+	public void CadastrarSobrenome(){
+		sobrenome = JOptionPane.showInputDialog(
+				"Digite o sobrenome do professor: "
+				);
+	}
+	public void CadastrarSexo(){
+		sexo = JOptionPane.showInputDialog(
+				"Digite o sexo do professor: "
+				);
+	}
+	public void CadastrarIdade(){
+		idade = Integer.parseInt(JOptionPane.showInputDialog(
+				"Digite a idade do professor: "
+				));
+	}
+	public void CadastrarEndereco(){
+		endereco = JOptionPane.showInputDialog(
+				"Digite o endereço do professor: "
+				);
+	}
+	public void CadastrarTelefone(){
+		telefone = JOptionPane.showInputDialog(
+				"Digite o telefone do professor: "
+				);
+	}
+	
+	
+	public void CadastrarMateria(){
+		materia = JOptionPane.showInputDialog(
+				"Digite a materia do professor: "
+				);
+	
+	
+	}
+	public void CadastrarEmail(){
+		email = JOptionPane.showInputDialog(
+				"Digite o e-mail do professor: "
+			);
+	}
+	public void CadastrarPeso(){
+		peso = Float.parseFloat(JOptionPane.showInputDialog(
+				"Digite o peso do professor: "
+				));
+	}
+	public void CadastrarTamanho(){
+		tamanho = Float.parseFloat(JOptionPane.showInputDialog(
+				"Digite o tamanho do professor: "
+				));
+	}
+	public void MostrarNome(){
+		JOptionPane.showMessageDialog(null, "O nome do professor é: " + nome);
+		}
+	public void MostrarSobrenome(){
+		JOptionPane.showMessageDialog(null, "O sobrenome do professor é: " + sobrenome);
+	}
+	public void MostrarSexo(){
+		JOptionPane.showMessageDialog(null, "O sexo do professor é: " + sexo);
+	}
+	public void MostrarIdade(){
+		JOptionPane.showMessageDialog(null, "A idade do professor é: " + idade);
+	}
+		public void MostrarEndereco(){
+			JOptionPane.showMessageDialog(null, "O endereço do professor é: " + endereco);
+		}
+		public void MostrarTelefone(){
+			JOptionPane.showMessageDialog(null, "O telefone do professor é: " + telefone);
+		}
+		public void MostrarMateria(){
+			JOptionPane.showMessageDialog(null, "A materia do professor é: " + materia);
+		}
+		public void MostrarEmail(){
+			JOptionPane.showMessageDialog(null, "O E-mail do professor é: " + email);
+		}
+		
+		
+		
+		public void MostrarPeso(){
+			JOptionPane.showMessageDialog(null, "O peso do professor é: " + peso);
+		}
+		public void MostrarTamanho(){
+			JOptionPane.showMessageDialog(null, "O tamanho do professor é: " + tamanho);
+			}
+
+	
+}
