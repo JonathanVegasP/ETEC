@@ -1,0 +1,40 @@
+//classe de gerenciamento
+public class GerenciaTurma {
+//objeto turma
+Turma tm = new Turma();
+//metodos do objeto turma gerenciados pela classe
+public void CadastrarTurma(){
+	tm.CadastrarNome();
+	tm.CadastrarNumero();
+	tm.CadastrarHorario();
+	tm.CadastrarAulas();
+	tm.CadastrarMaterias();
+	tm.CadastrarAlunos();
+	tm.CadastrarRepresentante();
+	tm.CadastrarProfessor();
+	tm.CadastrarEmail();
+	tm.CadastrarNota();
+	
+	
+	
+	
+	
+	
+}
+public void MostrarTurma(){
+	tm.MostrarNome();
+	tm.MostrarNumero();
+	tm.MostrarHorario();
+	tm.MostrarAulas();
+	tm.MostrarMaterias();
+	tm.MostrarAlunos();
+	tm.MostrarRepresentante();
+	tm.MostrarProfessor();
+	tm.MostrarEmail();
+	tm.MostrarNota();
+	
+	
+	
+	
+}
+}
