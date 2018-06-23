@@ -1,0 +1,30 @@
+//classe de gerenciamento
+public class GerenciaProfessor {
+//objeto professor
+Professor pf = new Professor();
+//metodos do objeto professor gerenciado pela classe
+public void CadastrarProfessor(){
+	pf.CadastrarNome();
+	pf.CadastrarSobrenome();
+	pf.CadastrarSexo();
+	pf.CadastrarIdade();
+	pf.CadastrarEndereco();
+	pf.CadastrarTelefone();
+	pf.CadastrarMateria();
+	pf.CadastrarEmail();
+	pf.CadastrarPeso();
+	pf.CadastrarTamanho();
+}
+public void MostrarProfessor(){
+	pf.MostrarNome();
+	pf.MostrarSobrenome();
+	pf.MostrarSexo();
+	pf.MostrarIdade();
+	pf.MostrarEndereco();
+	pf.MostrarTelefone();
+	pf.MostrarMateria();
+	pf.MostrarEmail();
+	pf.MostrarPeso();
+	pf.MostrarTamanho();
+}
+}
