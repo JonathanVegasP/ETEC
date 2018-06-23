@@ -1,0 +1,69 @@
+//Biblioteca para o funcionamento adequado das funções utilizadas na classe
+import javax.swing.*;
+//classe
+public class Aluno {
+	//propriedades da classe
+  String nome, sobrenome, endereco, mae, pai, bairro, nacao;
+	int idade,cep,tel;
+	//metodos da classe
+  public void CadastrarNome() {
+		nome = JOptionPane.showInputDialog("Digite o nome do aluno");
+	}
+	public void CadastrarSobrenome() {
+		sobrenome = JOptionPane.showInputDialog("Digite o sobrenome do aluno");	
+	}
+	public void CadastrarIdade() {
+		idade = Integer.parseInt(JOptionPane.showInputDialog("Digite a idade do aluno"));
+	}
+	public void CadastrarPai() {
+		pai = JOptionPane.showInputDialog("Digite o nome do pai do aluno");
+	}
+	public void CadastrarMae() {
+		mae = JOptionPane.showInputDialog("Digite o nome da mãe do aluno");
+	}
+	public void CadastrarEndereco() {
+		endereco = JOptionPane.showInputDialog("Digite o endereço do aluno");
+	}
+	public void CadastrarBairro() {
+		bairro = JOptionPane.showInputDialog("Digite o bairro do aluno");
+	}
+	public void CadastrarCEP() {
+		cep = Integer.parseInt(JOptionPane.showInputDialog("Digite o seu cep"));
+	}
+	public void CadastrarNacionalidade() {
+		nacao = JOptionPane.showInputDialog("Digite a nacionalidade do aluno");
+	}
+	public void CadastrarTelefone() {
+		tel =  Integer.parseInt(JOptionPane.showInputDialog("Digite o número de telefone do aluno"));
+	}
+	public void MostrarNome() {
+		JOptionPane.showMessageDialog(null,"Nome: " + nome);
+	}
+	public void MostrarSobrenome() {
+		JOptionPane.showMessageDialog(null,"Sobrenome: " + sobrenome);
+	}
+	public void MostrarIdade() {
+		JOptionPane.showMessageDialog(null,"Idade: "+idade);
+	}
+	public void MostrarPai() {
+		JOptionPane.showMessageDialog(null,"Pai: "+pai);
+	}
+	public void MostrarMae() {
+		JOptionPane.showMessageDialog(null,"Mãe: "+mae);
+	}
+	public void MostrarEndereco() {
+		JOptionPane.showMessageDialog(null,"Endereço: "+endereco);
+	}
+	public void MostrarBairro() {
+		JOptionPane.showMessageDialog(null,"Bairro: "+bairro);
+	}
+	public void MostrarCEP() {
+		JOptionPane.showMessageDialog(null,"CEP: "+cep);
+	}
+	public void MostrarNacionalidade() {
+		JOptionPane.showMessageDialog(null,"Nacionalidade: "+nacao);
+	}
+	public void MostrarTelefone() {
+		JOptionPane.showMessageDialog(null,"Telefone: "+tel);
+	}
+	}
