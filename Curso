@@ -1,0 +1,69 @@
+//Biblioteca para o funcionamento adequado das funções utilizadas na classe
+import javax.swing.JOptionPane;
+//classe
+public class Curso {
+//propriedades da classe
+	String nome,endereco,telefone,direcao,email,coordenacao,professor; 
+	int alunos;
+	float duracao, preco;
+  //metodos da classe
+	public void CadastrarNome(){
+		nome = JOptionPane.showInputDialog(
+				"Digite o nome do curso: "
+				);
+	}
+	public void CadastrarEndereco(){
+		endereco = JOptionPane.showInputDialog(
+				"Digite o endereço do curso: "
+				);
+	}
+	public void CadastrarTelefone(){
+		telefone = JOptionPane.showInputDialog(
+				"Digite o telefone do curso: "
+				);
+	}
+	public void CadastrarDirecao(){
+		direcao = JOptionPane.showInputDialog("Digite o nome do diretor do curso: ");
+	}
+	public void CadastrarCoordenacao(){
+		coordenacao = JOptionPane.showInputDialog(
+				"Digite o nome do coordenador do curso: "
+				);
+	}
+	public void CadastrarProfessor(){
+		professor = JOptionPane.showInputDialog(
+				"Digite o nome do professor do curso: "
+				);
+	}
+	public void CadastrarAlunos(){
+		alunos = Integer.parseInt(JOptionPane.showInputDialog(
+				"Digite a quantidade de vagas do curso: "
+				));
+	}
+	public void CadastrarEmail(){
+		email = JOptionPane.showInputDialog(
+				"Digite o e-mail do curso: "
+			);
+	}
+	public void CadastrarDuracao(){
+		duracao = Integer.parseInt(JOptionPane.showInputDialog(
+				"Digite a duração do curso: "
+				));
+	}
+	public void CadastrarPreco(){
+		preco = Float.parseFloat(JOptionPane.showInputDialog(
+				"Digite o preço do curso: "
+				));
+	}
+		public void MostrarNome(){
+			JOptionPane.showMessageDialog(null, "O nome do curso é: " + nome);
+			}
+			public void MostrarEndereco(){
+				JOptionPane.showMessageDialog(null, "O endereço do curso é: " + endereco);
+			}
+			public void MostrarTelefone(){
+				JOptionPane.showMessageDialog(null, "O telefone do curso é: " + telefone);
+			}
+			public void MostrarDirecao(){
+				JOptionPane.showMessageDialog(null, "O(A) diretor(A) do curso é: " + direcao);
+			}
