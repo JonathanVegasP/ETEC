@@ -1,0 +1,30 @@
+//classe de gerenciamento
+public class GerenciaAluno {
+//objeto aluno
+Aluno al = new Aluno();
+//metodos do objeto aluno gerenciados pela classe
+public void CadastrarAluno(){
+	al.CadastrarNome();
+	al.CadastrarSobrenome();
+	al.CadastrarIdade();
+	al.CadastrarPai();
+	al.CadastrarMae();
+	al.CadastrarEndereco();
+	al.CadastrarBairro();
+	al.CadastrarCEP();
+	al.CadastrarNacionalidade();
+	al.CadastrarTelefone();	
+}
+public void MostrarAluno(){
+	al.MostrarNome();
+	al.MostrarSobrenome();
+	al.MostrarIdade();
+	al.MostrarPai();
+	al.MostrarMae();
+	al.MostrarEndereco();
+	al.MostrarBairro();
+	al.MostrarCEP();
+	al.MostrarNacionalidade();
+	al.MostrarTelefone();
+}
+}
