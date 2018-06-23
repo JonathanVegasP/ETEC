@@ -1,0 +1,29 @@
+//classe de gerenciamento
+public class GerenciaCurso {
+
+Curso cs = new Curso();
+public void CadastrarCurso(){
+	cs.CadastrarNome();
+	cs.CadastrarDuracao();
+	cs.CadastrarPreco();
+	cs.CadastrarTelefone();
+	cs.CadastrarEmail();
+	cs.CadastrarEndereco();
+	cs.CadastrarAlunos();
+	cs.CadastrarProfessor();
+	cs.CadastrarCoordenacao();
+	cs.CadastrarDirecao();
+}
+public void MostrarCurso(){
+	cs.MostrarNome();
+	cs.MostrarDuracao();
+	cs.MostrarPreco();
+	cs.MostrarTelefone();
+	cs.MostrarEmail();
+	cs.MostrarEndereco();
+	cs.MostrarAlunos();
+	cs.MostrarProfessor();
+	cs.MostrarCoordenacao();
+	cs.MostrarDirecao();	
+}
+}
