@@ -1,7 +1,8 @@
 //classe de gerenciamento
 public class GerenciaCurso {
-
+//objeto Curso
 Curso cs = new Curso();
+//metodos do objeto Curso gerenciado pela classe
 public void CadastrarCurso(){
 	cs.CadastrarNome();
 	cs.CadastrarDuracao();
